@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogos de Futebol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>⚽ Jogos de Futebol</h1>
+  <p>FIFA, PES e a evolução dos games</p>
+  <button onclick="scrollToSection()">Explorar</button>
+</header>
+
+<nav>
+  <a href="#fifa">FIFA</a>
+  <a href="#pes">PES</a>
+  <a href="#comparacao">Comparação</a>
+  <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="fifa" class="fade">
+  <h2>🎮 FIFA</h2>
+  <p>
+    O FIFA é um dos jogos de futebol mais famosos do mundo, desenvolvido pela EA Sports.
+    Ele se destaca pelos gráficos realistas, licenças oficiais e modos como Ultimate Team.
+  </p>
+</section>
+
+<section id="pes" class="fade">
+  <h2>🎮 PES (eFootball)</h2>
+  <p>
+    O PES, agora chamado de eFootball, é conhecido por sua jogabilidade mais realista.
+    Muitos jogadores preferem pela física da bola e movimentação.
+  </p>
+</section>
+
+<section id="comparacao" class="fade">
+  <h2>⚖️ Comparação</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>FIFA</h3>
+      <ul>
+        <li>Mais licenças</li>
+        <li>Gráficos avançados</li>
+        <li>Modo online forte</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>PES</h3>
+      <ul>
+        <li>Jogabilidade realista</li>
+        <li>Física melhor</li>
+        <li>Mais leve</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="simulador fade">
+  <h2>🎯 Simulador de Habilidade</h2>
+  <p>Escolha sua habilidade no jogo:</p>
+
+  <input type="range" min="0" max="100" id="skill">
+  <button onclick="calcularSkill()">Ver nível</button>
+
+  <div id="resultado"></div>
+</section>
+
+<section id="quiz" class="fade">
+  <h2>🧠 Quiz</h2>
+  <p>Qual jogo você prefere?</p>
+
+  <button onclick="resposta('FIFA')">FIFA</button>
+  <button onclick="resposta('PES')">PES</button>
+
+  <div id="quizResultado"></div>
+</section>
+
+<footer>
+  <p>Site interativo sobre jogos ⚽🔥</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
